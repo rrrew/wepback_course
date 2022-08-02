@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор дат</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./src/main.js" type="module"></script>
+    <script src="./node_modules/howler/dist/howler.js"></script>
+</head>
+<body>
+    <header>
+        <button id="opencalc">Расчёт разницы между датами</button>
+        <button id="opentimer">Таймер</button>
+    </header>
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label>
+        <button type="submit">Рассчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+    <div id="timer" class="not-active">
+        <p>Установленное время: <span id="timerExpTime">0</span> секунд</p>
+        <p>Таймер: <span id="timerCurTime">0</span> секунд</p>
+        <input type="text" id="timerTo" class="input__timer">
+        <button id="timerToEnter">ENTER</button>
+        <button id="timerStart">START</button>
+        <button id="timerStop">STOP</button>
+    </div>
+</body>
+</html>
